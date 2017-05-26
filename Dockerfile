@@ -2,6 +2,6 @@ FROM elasticsearch:latest
 
 USER root
 
-RUN yum -y install bind-utils
+RUN apk update && apk add bind-tools
 COPY es-docker /usr/share/elasticsearch/bin/
 USER elasticsearch
