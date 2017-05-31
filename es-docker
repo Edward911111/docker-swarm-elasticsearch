@@ -72,6 +72,9 @@ do
     fi
 done < <(env)
 
+es_opt="-Enode.name=${MY_IP}"
+es_opts+=" ${es_opt}"
+
 # The virtual file /proc/self/cgroup should list the current cgroup
 # membership. For each hierarchy, you can follow the cgroup path from
 # this file to the cgroup filesystem (usually /sys/fs/cgroup/) and
