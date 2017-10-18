@@ -1,4 +1,5 @@
 FROM elasticsearch:latest
+RUN bin/elasticsearch-plugin install x-pack  
 
 USER root
 
